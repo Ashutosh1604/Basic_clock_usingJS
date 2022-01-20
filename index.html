@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-size: 23px;
+        background-color: grey;
+        border: 2px solid black;
+        padding: 34px;
+        text-align: center;
+    }
+
+    #time{
+        font-weight:bold;
+    }
+</style>
+<body>
+    <div class="container">
+
+        <span id="time"></span>
+    </div>
+
+</body>
+
+<script>
+
+    function displayTime()
+    {
+        time=new Date();
+
+        document.getElementById('time').innerHTML=time;
+
+    }setInterval(displayTime,1000);
+</script>
+</html>
